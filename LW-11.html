@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <title>Exercicio 11</title>
+        <style>
+            /* 1) Alinear el texto de las celdas, cabeceras y título. Definir los bordes de la tabla, celdas y cabeceras (color gris oscuro #333): */
+            table, th, td {
+                text-align: center;
+                border-color: #333333;
+                border-collapse: collapse;
+                border-width: 1px;
+                font-family: Arial;
+                padding: 5px;
+            }
+            /* 2) Formatear las cabeceras de fila y columna con la imagen de fondo correspondiente en cada caso (fondo_gris.gif, euro.png, dolar.png, yen.png, libra.png).
+            Modificar el tipo de letra de la tabla y utilizar Arial. El color azul claro es #E6F3FF. */
+            th {
+                background-image: url(fondo_gris.gif);
+            }
+            /* -- OPTIMIZACION --*/
+            th.moeda {
+                background-repeat: no-repeat;
+                background-position: left center;
+                padding-left: 18px;
+                background-color: #E6F3FF;
+                text-align: left;
+            }
+            th#euro {
+                background-image: url(euro.png);
+            }
+            th#dolar {
+                background-image: url(dolar.png);
+            }
+            th#libra {
+                background-image: url(libra.png);
+            }
+            th#yen {
+                background-image: url(yen.png);
+            }
+            /* 3) Mostrar un color alterno en las filas de datos (color amarillo claro #FFFFCC).*/
+            tr:nth-child(2n) {
+                background-color: #FFFFCC;
+            }
+
+        </style>
+    </head>
+
+    <body>
+    <table border="1" summary="Tipos de cambio">
+        <tr>
+            <th scope="col">Cambio</th>
+            <th scope="col">Compra</th>
+            <th scope="col">Venta</th>
+            <th scope="col">M&aacute;ximo</th>
+            <th scope="col">M&iacute;nimo</th>
+        </tr>
+        <tr>
+            <th scope="row" id="euro" class="moeda">Euro/Dolar</th>
+            <td>1.2524</td>
+            <td>1.2527</td>
+            <td>1.2539</td>
+            <td>1.2488</td>
+        </tr>
+        <tr>
+            <th scope="row" id="dolar" class="moeda">Dolar/Yen</th>
+            <td>119.01</td>
+            <td>119.05</td>
+            <td>119.82</td>
+            <td>119.82</td>
+        </tr>
+        <tr>
+            <th scope="row" id="libra" class="moeda">Libra/Dolar</th>
+            <td>1.8606</td>
+            <td>1.8611</td>
+            <td>1.8651</td>
+            <td>1.8522</td>
+        </tr>
+        <tr>
+            <th scope="row" id="yen" class="moeda">Euro/Yen</th>
+            <td>149.09</td>
+            <td>149.13</td>
+            <td>149.79</td>
+            <td>148.96</td>
+        </tr>
+    </table>
+
+    </body>
+</html>
