@@ -1,0 +1,51 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<title>Ejercicio menu vertical avanzado</title>
+		<style type="text/css">
+			ul.menu {
+				width: 180px;
+				list-style: none;
+				margin: 0;
+				padding: 0;
+				border: 1px solid #7C7C7C;
+			}
+			ul.menu li {
+				border-bottom: 1px solid #7C7C7C;
+				border-top: 1px solid #FFF;
+				background: #F4F4F4;
+			}
+			ul.menu li a {
+				padding: .2em 0 .2em 1.3em;
+                /* 4) El comportamiento anterior se debe producir cuando el usuario pasa el ratón por encima de cualquier zona del elemento del menú, no solo cuando se pasa el ratón por encima del texto del elemento */
+				display: block;
+				text-decoration: none;
+				color: #333;
+                /* 1) Los elementos deben mostrar una imagen de fondo (flecha_inactiva.png): */
+                background-image: url(flecha_inactiva.png);
+                background-repeat: no-repeat;
+                background-position: left center;
+			}
+            /* 2) Cuando se pasa el ratón por encima de un elemento, se debe mostrar una imagen alternativa (flecha_activa.png): */
+			ul.menu li a:hover {
+                background-image: url(flecha_activa.png);
+                background-repeat: no-repeat;
+                background-position: left center;
+                /* 3) El color de fondo del elemento también debe variar ligeramente y mostrar un color gris más oscuro (#E4E4E4) cuando se pasa el ratón por encima: */
+                background-color: #E4E4E4;
+			}
+		</style>
+	</head>
+
+	<body>
+		<ul class="menu">
+			<li><a href="#" title="Enlace generico">Elemento 1</a></li>
+			<li><a href="#" title="Enlace generico">Elemento 2</a></li>
+			<li><a href="#" title="Enlace generico">Elemento 3</a></li>
+			<li><a href="#" title="Enlace generico">Elemento 4</a></li>
+			<li><a href="#" title="Enlace generico">Elemento 5</a></li>
+			<li><a href="#" title="Enlace generico">Elemento 6</a></li>
+		</ul>
+	</body>
+</html>
