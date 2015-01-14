@@ -203,7 +203,7 @@ body {
     color: black;
     font-family: Arial;
     font-size: .9em;
-    line-height: 1.4;
+    line-height: 1.4em;
 }
 
 /*
@@ -212,14 +212,14 @@ body {
 .articulo h2 {
     color: #CC6600;
     font-size: 1.6em;
-    line-height: 1.2;
+    line-height: 1.2em;
     margin-bottom: 0.3em;
 }
 
 /*
 7.3. Los elementos del #menu deben mostrar un margen a su derecha de 1em y los enlaces deben ser de color blanco y tamaño de letra 1.3em.
 */
-#menu li {
+#menu ul li {
     margin-right: 1em;
 }
 #menu a {
@@ -270,7 +270,9 @@ body {
 #secundario p {
     margin-top: .5em;
 }
-/*Añadir las reglas necesarias para que el contenido de #pie se vea como en la imagen que se muestra.*/
+/*
+7.8. Añadir las reglas necesarias para que el contenido de #pie se vea como en la imagen que se muestra.
+*/
 #pie {
     color: #555;
     font-size: .75em;
